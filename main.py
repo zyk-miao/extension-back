@@ -1,5 +1,4 @@
 import json
-import urllib.parse
 
 import tornado.ioloop
 import tornado.web
@@ -13,8 +12,12 @@ class GetBookMark(tornado.web.RequestHandler):
 
     async def post(self):
         all_bookmark = self.get_body_argument("allBookMark")
-        all_bookmark = json.loads(all_bookmark)[0]['children'][0]
-        print(json.dumps(all_bookmark, indent=2))
+        all_bookmark = json.loads(all_bookmark)
+        # chrome
+        bookmark_bar_list = all_bookmark[0]['children'][0]['children']
+        # firefox
+        # bookmark_bar_list = all_bookmark[0]['children'][1]['children']
+        print(json.dumps(bookmark_bar_list, indent=2))
         await self.finish("bbb")
 
     def set_default_headers(self):
