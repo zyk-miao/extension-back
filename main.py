@@ -4,59 +4,59 @@ import tornado.ioloop
 import tornado.web
 
 # 定义处理类型
-tool_bar = {}
+# tool_bar = {}
 
 
-# tool_bar = {
-#     "id": "toolbar_____",
-#     "title": "\u4e66\u7b7e\u5de5\u5177\u680f",
-#     "index": 1,
-#     "dateAdded": 1608713447670,
-#     "type": "folder",
-#     "dateGroupModified": 1608776773455,
-#     "children": [
-#         {
-#             "id": "xF9itG_HqSrZ",
-#             "title": "1",
-#             "index": 0,
-#             "dateAdded": 1608714538000,
-#             "type": "bookmark",
-#             "url": "http://baidu/",
-#             "parentId": "toolbar_____"
-#         },
-#         {
-#             "id": "Dfb5dsHYe0mo",
-#             "title": "2",
-#             "index": 1,
-#             "dateAdded": 1608714632935,
-#             "type": "folder",
-#             "parentId": "toolbar_____",
-#             "dateGroupModified": 1608714723372,
-#             "children": [
-#                 {
-#                     "id": "4I4zts_zo3n_",
-#                     "title": "3",
-#                     "index": 0,
-#                     "dateAdded": 1608714637848,
-#                     "type": "bookmark",
-#                     "url": "http://0.0.0.2/",
-#                     "parentId": "Dfb5dsHYe0mo"
-#                 }
-#             ]
-#         },
-#         {
-#             "id": "NvywRHNPhNcP",
-#             "title": " 4",
-#             "index": 2,
-#             "dateAdded": 1608773643556,
-#             "type": "folder",
-#             "parentId": "toolbar_____",
-#             "dateGroupModified": 1608773643556,
-#             "children": []
-#         }
-#     ],
-#     "parentId": "root________"
-# }
+tool_bar = {
+    "id": "toolbar_____",
+    "title": "\u4e66\u7b7e\u5de5\u5177\u680f",
+    "index": 1,
+    "dateAdded": 1608713447670,
+    "type": "folder",
+    "dateGroupModified": 1608776773455,
+    "children": [
+        {
+            "id": "xF9itG_HqSrZ",
+            "title": "1",
+            "index": 0,
+            "dateAdded": 1608714538000,
+            "type": "bookmark",
+            "url": "http://baidu/",
+            "parentId": "toolbar_____"
+        },
+        {
+            "id": "Dfb5dsHYe0mo",
+            "title": "2",
+            "index": 1,
+            "dateAdded": 1608714632935,
+            "type": "folder",
+            "parentId": "toolbar_____",
+            "dateGroupModified": 1608714723372,
+            "children": [
+                {
+                    "id": "4I4zts_zo3n_",
+                    "title": "3",
+                    "index": 0,
+                    "dateAdded": 1608714637848,
+                    "type": "bookmark",
+                    "url": "http://0.0.0.2/",
+                    "parentId": "Dfb5dsHYe0mo"
+                }
+            ]
+        },
+        {
+            "id": "NvywRHNPhNcP",
+            "title": " 4",
+            "index": 2,
+            "dateAdded": 1608773643556,
+            "type": "folder",
+            "parentId": "toolbar_____",
+            "dateGroupModified": 1608773643556,
+            "children": []
+        }
+    ],
+    "parentId": "root________"
+}
 
 
 class GetBookMark(tornado.web.RequestHandler):
